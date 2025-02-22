@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 # .env dosyasını yükle
 load_dotenv()
 API_KEY = os.getenv("FINNHUB_API_KEY")
+print(f"Using API Key: {API_KEY}")  # API Key’i terminale yazdır
 
 app = Flask(__name__)
 
